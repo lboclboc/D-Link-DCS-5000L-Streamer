@@ -2,17 +2,17 @@
 Reverse engineering the streaming from a D-Link DC-S5000L (and perhaps other old D-Link cameras)
 
 Basically the applet (that of course no longer works in todays browsers) basically just opens the url
-    http://``ip-address''/mjpeg.cgi
+    http://__ip-address__/mjpeg.cgi
 
-(or possibly also http://<ip-address>/dgvideo.cgi)
+(or possibly also http://__ip-address__/dgvideo.cgi)
 
 While sending following headers:
     User-Agent: user
-    Authorization: Basic <DeviceSerialNo>
+    Authorization: Basic <<DeviceSerialNo>>
 
-The <DeviceSerialNo> can be fetched by surfing to the "Live Video" page, click in Java and save the page. Search the HTML for
-for the string "DeviceSerialNo", the value field is the <DeviceSerialNo>.
-This string is then actually a base64 encoded string for: admin:<password>
+The <<DeviceSerialNo>> can be fetched by surfing to the "Live Video" page, click in Java and save the page. Search the HTML for
+for the string "DeviceSerialNo", the value field is the <<DeviceSerialNo>>.
+This string is then actually a base64 encoded string for: admin:<<password>>
 
 The first 4 lines of the result is HTTP-headers like:
 
