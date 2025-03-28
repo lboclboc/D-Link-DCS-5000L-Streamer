@@ -1,0 +1,16 @@
+<script language="Javascript">
+              if (jreversions == "") {
+              	  if (supportJava())
+                  	id_jre.style.display='';
+              } else {
+                document.write('<applet name=\"cvcs\" codeBase=\"http://192.168.69.75:80\" archive=\"aplug.jar\" code=\"aplug.class\" width=\"640\" height=\"480\">');
+                document.write('<param name=\"RemotePort\" value=\"80\">');
+                document.write('<param name=\"RemoteHost\" value=\"192.168.69.75\">');
+                document.write('<param name=\"Timeout\" value=\"5000\">');
+                document.write('<param name=\"RotateAngle\" value=\"0\">');
+                document.write('<param name=\"PreviewFrameRate\" value=\"2\">');
+                document.write('<param name=\"Algorithm\" value=\"1\">');
+                document.write('<param name=\"DeviceSerialNo\" value=\"YWRtaW46WEFKVFI0eWhGOU96\">');
+                document.write('</applet>');
+              }
+              </script>
