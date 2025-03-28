@@ -2,7 +2,7 @@
 Reverse engineering the streaming from a D-Link DC-S5000L (and perhaps other old D-Link cameras)
 
 Basically the applet (that of course no longer works in todays browsers) basically just opens the url
-    http://<ip-address>/mjpeg.cgi
+    http://``ip-address''/mjpeg.cgi
 
 (or possibly also http://<ip-address>/dgvideo.cgi)
 
